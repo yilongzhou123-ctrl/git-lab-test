@@ -1,18 +1,21 @@
-name: build script for hello.c
+name: build script for hello.c		
 
-on:
+on:							
   push:
-    branches: [ "main" ]
+    branches: [ "main" ]			
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  build:						
+    runs-on: ubuntu-latest			
     steps:
       - uses: actions/checkout@v5
-      - name: build hello
-        run: gcc -o hello hello.c
-      - name: upload binary
+
+      - name: build hello			
+        run: gcc -o hello hello.c		
+
+      - name: upload binary			
         uses: actions/upload-artifact@v5
         with:
-          name: Hello World
-          path: ./hello
+          name: Hello World			
+          path: ./hello				
+

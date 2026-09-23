@@ -1,7 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
 int main(){
-	printf("hello world\n");
-	printf("java world\n");
-	return 0;
-
+	puts("hello, world!");
+	return EXIT_SUCCESS;
 }
